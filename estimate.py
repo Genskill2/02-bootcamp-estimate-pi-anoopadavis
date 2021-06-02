@@ -11,9 +11,9 @@ def wallis(n):
     
     return 2*total
     
-def monte_carlo(n):
+def monte_carlo(e):
     import random
-    m=n
+    m=e
     a= 0
     b= 0
     t=0
