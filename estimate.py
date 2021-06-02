@@ -4,8 +4,8 @@ def wallis(n):
     p=n
     total=1
     temp=0
-    for i in range(1,p+1):
-        k = i*i
+    for j in range(1,p+1):
+        k = j*j
         temp = 4*k/(4*k-1)
         total= total*temp
     
@@ -13,11 +13,11 @@ def wallis(n):
     
 def monte_carlo(n):
     import random
-    k=n
+    m=n
     a= 0
     b= 0
-    pi=0
-    for i in range(k**2):
+    t=0
+    for j in range(m**2):
         x= random.random()
         y= random.random()
         d= x**2 + y**2
@@ -27,8 +27,8 @@ def monte_carlo(n):
             b+= 1
   
    
-    pi = 4*a/b
-    return pi
+    t = 4*a/b
+    return t
   
 
 class TestWallis(unittest.TestCase):
