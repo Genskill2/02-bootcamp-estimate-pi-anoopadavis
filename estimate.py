@@ -23,8 +23,8 @@ def monte_carlo(n):
         d= x**2 + y**2
         if d<= 1:
             a+= 1
-        elif:
-            b+= 1
+        
+        b+= 1
   
    
     t = 4*a/b
